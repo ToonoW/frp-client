@@ -7,8 +7,8 @@ service ssh start
 echo "add user"
 adduser --no-create-home --disabled-password wujinwen
 chmod 600 /etc/sudoers
-echo "wujinwen ALL=(ALL) ALL" >> /etc/sudoers
-echo wujinwen:123456 | chpasswd
+echo "guestuser ALL=(ALL) ALL" >> /etc/sudoers
+echo guestuser:123456 | chpasswd
 
 echo "download software"
 mkdir /frp-ssh
