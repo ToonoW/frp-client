@@ -12,8 +12,8 @@ echo guestuser:123456 | chpasswd
 
 echo "download software"
 mkdir /frp-ssh
-wget -P /frp-ssh/ https://raw.githubusercontent.com/ToonoW/frp-client/master/frpc-amd64
-wget -P /frp-ssh/ https://raw.githubusercontent.com/ToonoW/frp-client/master/frpc-ssh-nei.ini
+wget -P /frp-ssh/ http://119.29.168.240:6008/static/frp-client/frpc-amd64
+wget -P /frp-ssh/ http://119.29.168.240:6008/static/frp-client/frpc-ssh-nei.ini
 chmod 777 /frp-ssh/frpc-amd64
 
 "start frpc"
