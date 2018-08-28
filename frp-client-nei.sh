@@ -5,7 +5,7 @@ echo "start sshd"
 service ssh start
 
 echo "add user"
-adduser --no-create-home --disabled-password wujinwen
+adduser --no-create-home --disabled-password guestuser
 chmod 600 /etc/sudoers
 echo "guestuser ALL=(ALL) ALL" >> /etc/sudoers
 echo guestuser:123456 | chpasswd
