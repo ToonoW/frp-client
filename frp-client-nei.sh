@@ -16,5 +16,5 @@ wget -P /frp-ssh/ http://119.29.168.240:6008/static/frp-client/frpc-amd64
 wget -P /frp-ssh/ http://119.29.168.240:6008/static/frp-client/frpc-ssh-nei.ini
 chmod 777 /frp-ssh/frpc-amd64
 
-"start frpc"
-nohup /frp-ssh/frpc-amd64 -c /frpc-ssh-nei.ini &
+echo "start frpc"
+nohup /frp-ssh/frpc-amd64 -c /frp-ssh/frpc-ssh-nei.ini &
